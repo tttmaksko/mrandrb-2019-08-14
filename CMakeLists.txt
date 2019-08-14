@@ -8,7 +8,7 @@ conan_basic_setup()
 include_directories(include)
 
 set(${PROJECT_NAME}_SRC
-	main.cpp
+	src/main.cpp
 )
 
 add_library(${PROJECT_NAME} ${${PROJECT_NAME}_SRC})
