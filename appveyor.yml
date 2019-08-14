@@ -29,7 +29,7 @@ deploy:
     auth_token:
         secure: 8RbKKxAbtv4F943f2bk2dKMRU7X2uw81nQetHMUpWN+aFl133aTRRH6SMrtqyZR6
 
-    artifact: /.*\.pkg/
+    artifact: /.*\.*/
     force_update: true
 
     on:
