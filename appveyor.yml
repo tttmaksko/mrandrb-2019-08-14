@@ -15,23 +15,22 @@ environment:
 
 artifacts:
     - path: build\Release\mrandrb-ask-n-ans.exe
-      name: mrandrb-ask-n-ans.exe
 
 
 #    - path: '**\*.exe'
 
 #    - path: build\$(configuration)\mrandrb-ask-n-ans.exe
 
-#deploy:
-#    # выкладываем tagged-коммиты на GitHub Releases:
-#    description: '$(APPVEYOR_REPO_TAG_NAME)'
-#    provider: GitHub
-#
-#    auth_token:
-#        secure: 8RbKKxAbtv4F943f2bk2dKMRU7X2uw81nQetHMUpWN+aFl133aTRRH6SMrtqyZR6
-#
-#    artifact: /.*\.pkg/
-#    force_update: true
-#
-#    on:
-#        appveyor_repo_tag: true
+deploy:
+    # выкладываем tagged-коммиты на GitHub Releases:
+    description: '$(APPVEYOR_REPO_TAG_NAME)'
+    provider: GitHub
+
+    auth_token:
+        secure: 8RbKKxAbtv4F943f2bk2dKMRU7X2uw81nQetHMUpWN+aFl133aTRRH6SMrtqyZR6
+
+    artifact: /.*\.pkg/
+    force_update: true
+
+    on:
+        appveyor_repo_tag: true
