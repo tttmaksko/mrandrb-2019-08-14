@@ -14,7 +14,10 @@ environment:
       BUILD_TYPE: Release
 
 artifacts:
-    - path: '**\*.exe'
+    - path: build\Release\mrandrb-ask-n-ans.exe
+
+    
+#    - path: '**\*.exe'
 
 #    - path: build\$(configuration)\mrandrb-ask-n-ans.exe
 
