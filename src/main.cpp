@@ -5,44 +5,44 @@ using namespace std;
 
 int main()
 {
-    int mt= 0;
+    int mt = 0;
     string answer=" ";
     std::vector <std::string> a = {
-        "70590","999","6:50","Садик","11","2010","4300",
-        "Усатый-полосатый","3","11015","Учительница","150880","10055","7","10","2018"
+        "70590","999","6:50","kindergarden","11","2010","4300",
+        "Mustachioed-striped","3","11015","Teacher","150880","10055","7","10","2018"
     };
 
     std::vector <std::string> q = {
-        "Ведите пароль...",
-        "Номер предмета который тебя всегда спасает",
-        "Время твоего рождения(Часы и минуты через :)",
-        "Что для тебя Солнышко в твой жизни",
-        "Сколько тебе было месяцев когда ты первый раз попал в Кушву",
-        "Найди Настю и узнай вопрос",
-        "Твой вес при рождении,гр",
-        "Любимая книжка в детстве",
-        "Сколько лет ты ходил в мызыкальную школу?",
-        "Ищи на первом этаже дома",
-        "У кого в твоей жизни были инициалы М.В.И.",
-        "Иди ты в баню",
-        "Количество твоих машин умножить на год в который ты выложил аватарку в ВКонтакте",
-        "Сколько было дверей в квартире на Народной",
-        "Сколько фотографий висит над вашей кроватью в спальне",
-        "В каком году снесли телебашню  в Екатеринбурге"
+        "Enter password",
+        "Number of thing which always helps you",
+        "Your birth time(hours:minutes)",
+        "What is a 'Solnyshko' for you in your life ",
+        "how old were you when you first time visited Kushva(month)",
+        "Find Nastya and discover the question",
+        "Your birth weight,гр",
+        "what was your favourite book, when you were young",
+        "How long have you studied in musical school",
+        "Search for it on the first floor of a house",
+        "Who had initials M.V.I. in your life",
+        "Go to the bathhouse(Idi ty v banyu)",
+        "the number of your cars multiplied by the year in which you posted avatar in VK",
+        "How many doors were in the flat on the Narodnaya Street 9/1",
+        "How many photos hangs on the wall above your bed",
+        "in what year the TV tower was destructed"
     };
-    cout<<"Если понадобиться подсказка ищи нас\n";
-    for(int i = 0; i<a.size(); i++){
-        cout<<"Задание №"<<i+1<<endl;
-        cout<<q[i]<<"\nОтвет: ";
+    cout<<"If you need a hint,find us\n";
+    for(int i = 0; i<a.size();i++){
+        cout<<"Task №"<<i+1<<endl;
+        cout<<q[i]<<"\nAnswer: ";
         cin>>answer;
        
         while(answer!=a[i]){
             mt++;
-            cout<<"Неверно :(\n";
-            cout<<q[i]<<"\nОтвет: ";
+            cout<<"Wrong :(\n";
+            cout<<q[i]<<"\nAnswer: ";
             cin>>answer;  
         }
-        cout<<"Правильно!!! :)(:\n";
+        cout<<"Correct!!! :)(:\n";
     }  
-    cout<<"Поздравляем!!! "<<mt<<" ошибок\n";    
+    cout<<"Congratulations!!! "<<mt<<" mistakes\n";    
 }
