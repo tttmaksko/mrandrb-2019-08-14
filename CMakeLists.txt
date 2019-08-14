@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.7)
 
-project(mrndrb-ask-n-ans CXX)
+project(mrandrb-ask-n-ans CXX)
 
 #include(${CMAKE_BINARY_DIR}/../conanbuildinfo.cmake)
 #conan_basic_setup()

@@ -14,7 +14,7 @@ environment:
       BUILD_TYPE: Release
 
 artifacts:
-    - path: mrndrb-ask-n-ans.exe
+    - path: mrandrb-ask-n-ans.exe
 
 deploy:
     # выкладываем tagged-коммиты на GitHub Releases:
